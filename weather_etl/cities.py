@@ -6,7 +6,7 @@ from airflow.sdk import asset
         schedule="@daily"
 )
 
-def cities(self) -> dict:
+def weather_cities(self) -> dict:
     import requests
 
     response = requests.get(self.uri)
