@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from pendulum import datetime
-from utils import load_cities, dict_cities
+from .utils import load_cities, dict_cities
 
 with DAG(
     schedule_interval='*/15 * * * *', 
